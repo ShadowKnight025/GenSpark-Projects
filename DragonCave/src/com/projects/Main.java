@@ -1,8 +1,9 @@
 package com.projects;
-
 import java.util.Scanner;
 
 public class Main {
+
+    public static int answer;
 
     public static void main(String[] args) {
         // Trystan Meadows - Project 1 : Dragon Cave for GenSpark
@@ -34,7 +35,10 @@ public class Main {
                 "\n" +
                 "Offers to share his treasure with you!";
 
-        int answer = userinput.nextInt();
+        answer = userinput.nextInt();
+
+        userinput.close();
+
 
         if (answer == 1)
         {
